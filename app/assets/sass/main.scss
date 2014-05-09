@@ -1,0 +1,17 @@
+@import "compass/layout/sticky-footer";
+@import "mixin";
+@import "../../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+
+@include sticky-footer(30px,".root-content",".root-footer","main-footer");
+
+.container-fluid{
+  @include breakpoint(desktop){
+    width: $container-desktop;
+  }
+}
+
+.main-footer {
+  p {
+    margin:0;
+  }
+}

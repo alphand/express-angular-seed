@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+  head
+    meta(http-equiv="X-UA-Compatible",content="IE=edge")
+    meta(http-equiv="Content-Type",content="text/html; charset=utf-8")
+
+    title= pageTitle || "Express Template" 
+
+    link(rel="SHORTCUT ICON", href="//images.pureprofile.com/images/sitelogo/icofiles/pp.ico")
+    link(rel="stylesheet",type="text/css",href="//cloud.pureprofile.com/css/styles/account-holder/business-style.css")
+    link(rel="stylesheet",type="text/css",href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700")
+    link(rel="stylesheet", href="/public/assets/css/main.css")
+
+  body
+
+    |  <!-- Google Tag Manager -->
+    |  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MGWQ5Z"
+    |  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    |  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    |  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    |  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    |  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    |  })(window,document,'script','dataLayer','#{ GTAGMGRID || '' }');</script>
+    |  <!-- End Google Tag Manager -->
+
+    .root-content
+      include _topbar_v3
+
+      block content
+      
+      .root-footer
+
+    .main-footer
+      include _footer_v3
+
+    block last_body
+
